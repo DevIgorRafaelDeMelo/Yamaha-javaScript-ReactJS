@@ -43,6 +43,19 @@ import tec3 from './Img/tec3.webp'
 import r3roxa from './Img/r3roxa.png'
 import r3azul from './Img/r3azul.png'
 import oi from './Img/oi.jpg'
+import mt1 from './Img/mt-03/img1.webp'
+import mt2 from './Img/mt-03/img2.webp'
+import mt3 from './Img/mt-03/img3.webp'
+import mt4 from './Img/mt-03/img4.webp'
+import mt5 from './Img/mt-03/img5.webp'
+import mt6 from './Img/mt-03/img6.webp'
+import mt7 from './Img/mt-03/img7.webp'
+import mt8 from './Img/mt-03/img8.webp'
+import mt9 from './Img/mt-03/img9.webp'
+import mt10 from './Img/mt-03/img10.webp'
+import mtcor1 from './Img/mt-03/mtcor1.png'
+import mtcor2 from './Img/mt-03/mtcor2.png'
+import mtcor3 from './Img/mt-03/mtcor3.png'
 
 
 
@@ -50,7 +63,6 @@ function color() {
   const color = document.getElementById('menu-bar')
   color.style.background = "white"
 }
-
 
 function colorMoto1() {
   var img = document.getElementById("img-moto-cor");
@@ -60,6 +72,24 @@ function colorMoto1() {
 function colorMoto2() {
   var img = document.getElementById("img-moto-cor");
   img.src = r3azul
+}
+
+function colormt1(){
+  var img = document.getElementById("img-moto-cor-mt");
+  img.src = mtcor1
+
+}
+
+function colormt2(){
+  var img = document.getElementById("img-moto-cor-mt");
+  img.src = mtcor2
+
+}
+
+function colormt3(){
+  var img = document.getElementById("img-moto-cor-mt");
+  img.src = mtcor3
+
 }
 
 const MenuBar = () =>
@@ -529,9 +559,132 @@ const R3ABS = () =>
 
   </section>
 
+const Mt03 = () =>
+  <section id='Mt-03' >
+    <div className='mt-03'>
+      <div className='text-r3'>MT-03</div>
+      <div className='text-descriçao-r3'>A MOTO MASTER OF TORQUE</div>
+    </div>
+    <div className='flex banner-r3 '>
+      <div className='banner-text-performace'>
+        <div className='banner-perfomace'>PERFORMANCE</div>
+        <div className='motor-bi'>MOTOR BICILÍNDRICO</div>
+        <div className='banner-coments-performace'>A performance esportiva que você sempre buscou. Com 321 cc, desenvolve 42 cv e 3,0 kgf.m de torque. Conta com a exclusiva tecnologia DiASil que contribui para menor vibração, melhor dissipação de calor e ganho de performance.</div>
+      </div>
+      <iframe width="1090" height="500" src="https://www.youtube.com/embed/PvgKzui3YIk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <img className='img-banner-tecnology' src={mt2}></img>
+    <div className='flex'>
+      <div className='box-tecnology-1'>
+        <div className='text-tecnology'>"TECNOLOGIA</div>
+        <div className='text-comments-tecnology'>PAINEL 100% DIGITAL COM SHIFT LIGHT</div>
+      </div>
+      <div className='box-tecnology-2'>
+        Projetado para auxiliar sua performance, o painel da R3 é o único da categoria que possui a luz indicativa Shift Light personalizável, que indica o melhor momento para a troca de marchas.
+      </div>
+    </div>
+    <div className='flex img-banner-tec'>
+      <img className='img-tec' src={mt3}></img>
+      <img className='img-tec' src={mt4}></img>
+      <img className='img-tec' src={mt5}></img>
+    </div>
+    <div className='flex'>
+      <div className='box-tecnology-1'>
+        <div className='text-tecnology'> "CONFORTO</div>
+        <div className='text-comments-tecnology'>PILOTE TODOS OS DIAS</div>
+      </div>
+      <div className='box-tecnology-2'>
+        Sua posição de pilotagem esportiva é complementada pela nova suspensão dianteira invertida e amortecedor traseiro, com 7 regulagens na pré-carga da mola, proporcionando equilíbrio perfeito entre performance, agilidade e conforto.
+      </div>
+    </div>
+    <div className='flex img-banner-tec'>
+      <img className='img-tec' src={mt6}></img>
+      <img className='img-tec' src={mt7}></img>
+      <img className='img-tec' src={mt8}></img>
+    </div>
+    <div className='flex'>
+      <div className='box-tecnology-1'>
+        <div className='text-tecnology'> "DESIGN</div>
+        <div className='text-comments-tecnology'>AERODINÂMICA SUPERESPORTIVA</div>
+      </div>
+      <div className='box-tecnology-2'>
+        Seu visual traz o DNA da R series Yamaha. O novo para-brisa, entrada de ar frontal e carenagens laterais reduziram a resistência e turbulência do vento, fazendo a Nova R3 atingir até 8km/h a mais de velocidade final que o modelo anterior.
+      </div>
+    </div  >
+    <div className='frame'>
+      <iframe width="1060" height="615" src="https://www.youtube.com/embed/NABIP1_uwFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <img className='img-banner-tecnology' src={mt9}></img>
+    <div className='moto-color flex'>
+      <div className='select-moto'>
+        <div className='title-select'>OLHE MAIS DE PERTO
+        </div>
+        <div className='coments-select'>Escolha a versão que mais combina com você.
+        </div>
+        <div className='btn-cor cinza' onClick={colormt1}></div>
+        <div className='mots'><span>STORM FLUO</span><br />
+        Cinza Sólido</div>
+        <div className='btn-cor x-black' onClick={colormt2}></div>
+        <div className='mots'><span>X-BLACK</span><br />Preto Fosco</div>
+        <div className='btn-cor blue' onClick={colormt3}></div>
+        <div className='mots'><span>RACING BLUE</span><br /> Azul Metálico</div>
+      </div>
+      <img id='img-moto-cor-mt' src={mtcor1} ></img>
+    </div>
+    <img className='r3-sale' src={mt10}></img>
+    <div className='r3-sale-text'>
+      <div className='text-sale-1'>R3 ABS</div>
+      <div className='line-sales'></div>
+      <div className='flex'>
+        <div>
+          <div className='text-sale-2'>A PARTIR DE</div>
+          <div className='text-sale-2'>R$</div>
+        </div>
+        <div className='text-sale-3'>32.890,00</div>
+      </div>
+      <div className='line-sales'></div>
+      <div className='text-sale-4'>FRETE DE ACORDO COM A REGIÃO</div>
+    </div>
+    <div className='r3-seles'></div>
+    <div className='tabela-financiamento'>
+      <div className='financia'>FINANCIAMENTO</div>
+      <div className='flex tabela-1'>
+        <div className='text-finan-1'>ENTRADA</div>
+        <div className='text-finan-2'>R$  10.241, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>SALDO</div>
+        <div className='text-finan-2'>12x de</div>
+        <div className='text-finan-2'>R$  2.071, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>TAXA</div>
+        <div className='text-finan-2'>ZERO</div>
+      </div>
+      <div className='line-tabela'></div>
+      <div className='flex tabela-1'>
+        <div className='text-finan-1'>ENTRADA</div>
+        <div className='text-finan-2'>R$  10.241, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>SALDO</div>
+        <div className='text-finan-2'>36x de</div>
+        <div className='text-finan-2'>R$  824, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>TAXA</div>
+        <div className='text-finan-2'>0,99% a.m.</div>
+      </div>
+      <div className='simule-financiamento'>SIMULE O SEU FINANCIAMENTO</div>
+    </div>
+    <div className='text-modelo'>
+      "Modelo YZF-R3 modelo 2024. Preço Público Sugerido: R$ 32.890,00 à vista, sem frete. Preço de Venda R$ 34.135,00 à vista (base ICMS 12%) com frete incluso no valor de R$ 1.245,00, ou financiamento na modalidade de CDC em 12 meses: Entrada de R$ 10.241,00 (30%) e parcelas mensais fixas e sucessivas de R$ 2.071,00. Taxa de juros de 0% a.m. e 0% a.a. Custo efetivo total (CET). Ou em 36 meses: Entrada de R$ 10.241,00 (30%) e parcelas mensais fixas e sucessivas de R$ 824,00. Taxa de juros de 0,99% a.m. e 13% a.a. Custo efetivo total (CET) 15,65% a.a., IOF no valor de R$ 94,08. Valor total a ser financiado R$ 24.851,08 e valor final total (com encargos de financiamento) de R$ 39.905,00. Para o cálculo da CET foi considerada a tarifa de cadastro de R$ 600,00, valor de IOF informado em cada condição e valor médio de registro de contrato de R$ 263,00. O valor da taxa de registro de contrato praticado em cada Estado altera o valor da parcela de financiamento divulgada. Confira o valor da taxa de registro de contrato vigente e ICMS no Estado de emplacamento da motocicleta no ato da compra. Em caso de inadimplência, é permitida a cobrança de: Multa moratória de 2% mais juro de mora de 1% + taxa de juros remuneratórios pactuados no contrato ao mês (resolução 4558 do Banco Central). Conforme Art.52, § 2º da Lei Fed. 8.078/90, do Código de Defesa do Consumidor fica assegurado ao consumidor à liquidação antecipada do débito total ou parcialmente, mediante redução proporcional dos juros e demais acréscimos. As Condições gerais da Cédula de Crédito Bancário Operações de Financiamento de Bens está disponível no site do Banco Yamaha. Carência de 30 dias para pagamento da primeira parcela de financiamento. Condições válidas exclusivamente para financiamentos realizados pelo Banco Yamaha Motor do Brasil S.A. (https://www.yamahaservicosfinanceiros.com.br/banco.De 01/05/2023 a 31/05/2023, limitados a 50 unidades de cada modelo (independente do plano de financiamento). Crédito sujeito à aprovação. Apenas nas concessionárias participantes. As motocicletas Yamaha estão em conformidade com o los e Veículos Similares). BANCO YAMAHA MOTOR DO BRASIL S.A. Rod. Pres. Dutra, Km 214 - Guarulhos - SP - Brasil – CEP 07178-580 -SAC Produtos: (11) 2431-6500 - sac@yamaha-motor.com.br. Central de Relacionamento com o Cliente Banco: (11) 2088-7700 – SAC Banco: 0800-774-8283 - sac.banco@yamaha-motor.com.br. SAC - Atendimento ao Deficiente Auditivo ou de Fala: 0800-774-1415. Ouvidoria: 0800-774-9000 - ouvidoria@yamaha-motor.com.br. NO TRÂNSITO, SUA RESPONSABILIDADE SALVA VIDAS "
+    </div>
+    <div className='text-atençao m-0'>AVISO DE FRAUDE</div>
+    <div className='text-atençao-description'>A Yamaha informa que os seus produtos são comercializados por meio das concessionárias autorizadas da marca e/ou através do seu e-commerce oficial, não sendo realizadas vendas para o consumidor final por telefone, funcionários ou quaisquer outros tipos de parceiros e/ou representantes comerciais, bem como outros sites da internet.</div>
+
+  </section>
+
 function App() {
   return (
     <div className="App">
+      <Mt03 />
       <MenuBar />
       <FirstPage />
       <Shop />
