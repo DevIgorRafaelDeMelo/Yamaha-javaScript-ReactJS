@@ -1,126 +1,62 @@
 import './App.css';
 import { AiFillLinkedin, AiFillYoutube, AiOutlineTwitter, AiOutlineMenu, AiOutlineUser, AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import Logo1 from './Img/logoBlack.webp'
-import Logo2 from './Img/logoBranco.avif'
-import moto1 from './Img/moto1.avif'
-import moto2 from './Img/moto2.avif'
-import moto3 from './Img/moto3.avif'
-import moto4 from './Img/moto4.avif'
-import bannermoto1 from './Img/banner-moto1.avif'
-import bannermoto2 from './Img/banner-moto2.avif'
-import serviço1 from './Img/serviço1.avif'
-import serviço2 from './Img/serviço2.avif'
-import serviço3 from './Img/serviço3.avif'
+import Logo2 from './Img/logo2.webp'
+import moto1 from './Img/img2.webp'
+import moto2 from './Img/img3.webp'
+import moto3 from './Img/img4.webp'
+import moto4 from './Img/img5.webp'
+import bannermoto1 from './Img/img7.webp'
+import bannermoto2 from './Img/img8.jpg'
+import serviço1 from './Img/img9.webp'
+import serviço2 from './Img/img10.webp'
+import serviço3 from './Img/img11.webp'
 import logojapones from './Img/logojapones.webp'
-import bannerpeças from './Img/peças.avif'
-import shop1 from './Img/shop1.avif'
-import shop2 from './Img/shop2.avif'
-import shop3 from './Img/shop3.avif'
-import shop4 from './Img/shop4.avif'
-import shop5 from './Img/shop5.avif'
-import shop6 from './Img/shop6.avif'
-import shop7 from './Img/shop7.avif'
-import shop8 from './Img/shop8.avif'
-import shop9 from './Img/shop9.avif'
-import shop10 from './Img/shop10.avif'
-import shop11 from './Img/shop11.avif'
-import shop12 from './Img/shop12.avif'
-import bannerserviço from './Img/bannerserviços.avif'
-import mecanico from './Img/mecanico.avif'
-import pç from './Img/Pç.avif'
-import cor from './Img/cor.avif'
-import yamahaprice from './Img/yamaharevisao.avif'
-import revisaopreco from './Img/revisaopreco.avif'
+import bannerpeças from './Img/lojabanner.webp'
+import shop1 from './Img/loja1.webp'
+import shop2 from './Img/loja2.webp'
+import shop3 from './Img/loja3.webp'
+import shop4 from './Img/loja4.webp'
+import shop5 from './Img/loja5.webp'
+import shop6 from './Img/loja6.webp'
+import shop7 from './Img/loja7.webp'
+import shop8 from './Img/loja8.webp'
+import shop9 from './Img/loja9.webp'
+import shop10 from './Img/loja10.webp'
+import shop11 from './Img/loja11.webp'
+import shop12 from './Img/loja12.webp'
+import bannerserviço from './Img/img14.jpg'
+import mecanico from './Img/img15.webp'
+import pç from './Img/img16.webp'
+import cor from './Img/img17.webp'
+import yamahaprice from './Img/img19.webp'
+import revisaopreco from './Img/img18.webp'
 import qr from './Img/qrcode.png'
-import app1 from './Img/appaple.avif'
-import app2 from './Img/googleplay.avif'
-import r3 from './Img/r3abs.avif'
+import app1 from './Img/img20.webp'
+import app2 from './Img/img21.webp'
+import r3 from './Img/r3abs.jpg'
 import r3abs from './Img/bannerr3.png'
-import r3abs1 from './Img/r31.avif'
-import tec1 from './Img/tec1.avif'
-import tec2 from './Img/tec2.avif'
-import tec3 from './Img/tec3.avif'
+import r3abs1 from './Img/r31.webp'
+import tec1 from './Img/tec1.webp'
+import tec2 from './Img/tec2.webp'
+import tec3 from './Img/tec3.webp'
 import r3roxa from './Img/r3roxa.png'
 import r3azul from './Img/r3azul.png'
-import r3black from './Img/r3black.avif'
+import oi from './Img/oi.jpg'
 
 
-function openMenuMoto() {
-  closeall()
-  color()
-  const bar = document.getElementById('motos')
-  if (bar.style.display == "block") {
-    bar.style.display = "none"
-  } else (
-    bar.style.display = "block"
-  )
-
-}
 
 function color() {
   const color = document.getElementById('menu-bar')
   color.style.background = "white"
 }
 
-function closeall() {
-  const bar = document.getElementById('serviços')
-  bar.style.display = "none"
-  const motos = document.getElementById('motos')
-  motos.style.display = "none"
-  const yamaha = document.getElementById('yamaha')
-  yamaha.style.display = "none"
-  const color = document.getElementById('menu-bar')
-  color.style.background = "rgba(249, 249, 249, 0)"
-}
-
-function openMenuServiços() {
-  closeall()
-  color()
-  const bar = document.getElementById('serviços')
-  if (bar.style.display == "block") {
-    bar.style.display = "none"
-  } else (
-    bar.style.display = "block"
-  )
-}
-
-function openMenuServiçosClick() {
-  closeall()
-  const bar = document.getElementById('Main')
-  bar.style.display = "none"
-  const bar1 = document.getElementById('Serviço')
-  bar1.style.display = "block"
-  const bar2 = document.getElementById('Shop')
-  bar2.style.display = "none"
-}
-
-function openMenuYamaha() {
-  closeall()
-  color()
-  const bar = document.getElementById('yamaha')
-  if (bar.style.display == "block") {
-    bar.style.display = "none"
-  } else (
-    bar.style.display = "block"
-  )
-
-}
-
-function openMenuYamahaClick() {
-  closeall()
-  const bar = document.getElementById('Main')
-  bar.style.display = "block"
-  const bar1 = document.getElementById('Serviço')
-  bar1.style.display = "none"
-  const bar2 = document.getElementById('Shop')
-  bar2.style.display = "none"
-  window.scrollY = "0px"
-}
 
 function colorMoto1() {
   var img = document.getElementById("img-moto-cor");
   img.src = r3roxa
 }
+
 function colorMoto2() {
   var img = document.getElementById("img-moto-cor");
   img.src = r3azul
@@ -131,11 +67,11 @@ const MenuBar = () =>
     <section className='menu-bar' id='menu-bar' onMouseOver={color} >
       <div className='icon-logo'>{false ? <img src={Logo1}></img> : <img src={Logo2}></img>}</div>
       <div className='seçao-all-button'>
-        <button className='seçoes-btn' onClick={openMenuYamahaClick} onMouseOver={openMenuMoto}>MOTOS</button>
+        <button className='seçoes-btn' >MOTOS</button>
         <button className='seçoes-btn'>PEÇAS</button>
-        <button className='seçoes-btn' onClick={openMenuServiçosClick} onMouseOver={openMenuServiços}>SERVIÇOS</button>
+        <button className='seçoes-btn' >SERVIÇOS</button>
         <button className='seçoes-btn'>CONCESSIONÁRIAS</button>
-        <button className='seçoes-btn' onClick={openMenuYamahaClick} onMouseOver={openMenuYamaha} >YAMAHA</button>
+        <button className='seçoes-btn' >YAMAHA</button>
       </div>
       <div className='menu-end'>
         <div className='perfil-btn'>
@@ -149,7 +85,7 @@ const MenuBar = () =>
       <section className='motos-barra-menu'>
         <ul className='seçao-menu'>
           <div className='title-model'>SUPER SPORT</div>
-          <li className='name-model'>R3 ABS</li>
+          <li className='name-model' >R3 ABS</li>
           <li className='name-model'>R3 MONSTER ABS</li>
           <li className='name-model'>R3 60TH ANNIVERSARY</li>
         </ul>
@@ -209,7 +145,7 @@ const Motos = () =>
   </section>
 
 const FirstPage = () =>
-  <section id='Main' className='first-page' onMouseOver={closeall}>
+  <section id='Main' className='first-page' >
     <Motos />
     <div className='banner'>
       <div className='banner-title'>ESCOLHA A SUA YAMAHA</div>
@@ -278,7 +214,7 @@ const FirstPage = () =>
   </section>
 
 const Footer = () =>
-  <section className='footer' onMouseOver={closeall} >
+  <section className='footer'  >
     <div className='logo-yamaha'>YAMAHA MOTOR DO BRASIL</div>
     <div className='social-icons'>
       <div className='socias-icons'><AiFillFacebook className='socias-icons' /></div>
@@ -318,7 +254,7 @@ const Footer = () =>
   </section>
 
 const Shop = () =>
-  <section className='shop' id='Shop' onMouseOver={closeall}>
+  <section className='shop' id='Shop'>
     <img className='banner-shop' src={bannerpeças}></img>
     <div className='shop-pc'>
       <div className='title-shop'>CONHEÇA NOSSA LINHA DE PRODUTOS</div>
@@ -418,7 +354,7 @@ const Shop = () =>
   </section>
 
 const Serviço = () =>
-  <section className='Serviço' id='Serviço' onMouseOver={closeall}>
+  <section className='Serviço' id='Serviço'>
     <img className='banner-serviço' src={bannerserviço}></img>
     <div className='sinops-banner'>
       <div className='text-title-serviço'>YAMAHA SERVIÇOS</div>
@@ -471,7 +407,7 @@ const Serviço = () =>
   </section>
 
 const R3ABS = () =>
-  <section id='R3abs' onMouseOver={closeall}>
+  <section id='R3abs' >
     <div className='r3abs'>
       <div className='text-r3'>R3 ABS</div>
       <div className='text-descriçao-r3'>A MOTO SUPERSPORT PARA TODOS OS DIAS</div>
@@ -543,7 +479,7 @@ const R3ABS = () =>
       </div>
       <img id='img-moto-cor' src={r3roxa} ></img>
     </div>
-    <img className='r3-sale' src={r3black}></img>
+    <img className='r3-sale' src={oi}></img>
     <div className='r3-sale-text'>
       <div className='text-sale-1'>R3 ABS</div>
       <div className='line-sales'></div>

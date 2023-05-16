@@ -14,6 +14,7 @@
   top: 0px;
   right: 0px;
   width: 100%;
+  z-index: 10;
 }
 .banner-shop{
   width: 100%;
@@ -25,6 +26,7 @@
   padding: 30px ;
   margin: auto;
   width: 100%;
+  display: none;
 }
 .title-model{
   color: #181818;
@@ -97,12 +99,7 @@
 .li-menu{
   margin-bottom: 10px;
 }
-#Serviço{
-  display: none;
-}
-#Main{
- display: none;
-}
+
 #serviços{
   padding-bottom: 20px;
   position: absolute;
@@ -115,9 +112,7 @@
   width: 100%;
   background: white;
 }
-#Shop{
-  display: none;
-}
+
 .menu-icon{
   height: 30px;
   width: 30px;
@@ -126,17 +121,20 @@
 .menu-serviços{
   width: 30%;
   margin: auto;
+  display: none;
 }
 .menu-serviços-yamaha{
   width: 60%;
   margin: auto;
+  display: none;
 }
 
 .motos{
-  background-image: url('./Img/download.avif');
+  background-image: url('./Img/img1.webp');
   height: 100vh;
   width: 100%;
   background-size: cover;
+
 }
 
 
@@ -245,12 +243,12 @@
 
 }
 .banner-card-1{
-  background-image: url('./Img//banner1.avif');
+  background-image: url('./Img/img12.jpg');
   height: 500px;
 }
 .banner-card-2{
   margin-top: 30px;
-  background-image: url('./Img//banner2.avif');
+  background-image: url('./Img/img13.jpg');
   height: 500px;
 }
 .card-serviços{
@@ -381,6 +379,7 @@ ul{
 
 .banner-serviço{
   margin-top: 100px;
+  width: 100%;
   
 }
 .sinops-banner{
@@ -490,7 +489,7 @@ ul{
   width: 100px;
 }
 .r3abs{
-  background-image: url('./Img/r3.avif');
+  background-image: url('./Img/r3.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -570,8 +569,7 @@ ul{
   margin: auto;
   width: 99%;
 }
-.img-banner-tecnology{
-}
+
 .frame{
   text-align: center;
 }
@@ -587,9 +585,7 @@ ul{
 .banner-text-performace-2{
   margin-top: 200px;
 }
-.cormoto{
-  
-}
+
 #img-moto-cor{
   background-size: cover;
   background-position: center;
@@ -723,4 +719,30 @@ span{
 .m-0{
   margin: 0%;
   padding-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#R3abs{
+  display: block;
+}
+#Shop{
+  display: block;
+}
+#Serviço{
+  display: block;
+}
+#Main{
+ display: block;
 }
