@@ -7,7 +7,7 @@
   background: rgba(249, 249, 249, 0);
 }
 #menu-bar{
-  background: white;
+  background: rgba(255, 255, 255, 0.007);
 }
 .menu-top{
   position: fixed;
@@ -26,7 +26,6 @@
   padding: 30px ;
   margin: auto;
   width: 100%;
-  display: none;
 }
 .title-model{
   color: #181818;
@@ -57,13 +56,13 @@
 
 .seçoes-btn{
   border: none;
-  padding: 15px 0px;
-  margin: 0px 20px;
+  margin: 0px 40px;
   padding-top: 0px;
   background: rgba(255, 0, 0, 0);
   color: rgb(0, 0, 0);
   font-weight:700 ;
   font-size:17px;
+
 
 }
 
@@ -101,13 +100,11 @@
 }
 
 #serviços{
-  padding-bottom: 20px;
   position: absolute;
   width: 100%;
   background: white;
 }
 #yamaha{
-  padding-bottom: 20px;
   position: absolute;
   width: 100%;
   background: white;
@@ -121,12 +118,10 @@
 .menu-serviços{
   width: 30%;
   margin: auto;
-  display: none;
 }
 .menu-serviços-yamaha{
   width: 60%;
   margin: auto;
-  display: none;
 }
 
 .motos{
@@ -335,7 +330,8 @@ ul{
   margin-top: 100px;
 }
 .shop-pc{
-  padding: 0px 300px ;
+  width: 80%;
+  margin: auto;
 }
 .title-shop{
   overflow: hidden;
@@ -504,6 +500,23 @@ ul{
   width: 100%;
   text-align: center;
 }
+
+.R3-60{
+  background-image: url('./Img/r3-60/img1.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.mt-07{
+  background-image: url('./Img/mt-07/img1.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
 .text-r3{
   color: white;
   padding-top: 760px;
@@ -512,6 +525,11 @@ ul{
   font-family: Arial, Helvetica, sans-serif;
   
 }
+
+.img-tec-R3{
+  width: 100%;
+}
+
 .text-descriçao-r3{
   color: white;
   font-size: 20px;
@@ -601,6 +619,12 @@ ul{
   height: 600px;
 }
 #img-moto-cor-mt{
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  height: 600px;
+}
+#img-moto-cor-mt-3{
   background-size: cover;
   background-position: center;
   width: 1000px;
@@ -741,29 +765,70 @@ span{
   margin: 0%;
   padding-left: 250px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#R3abs{
-  display: block;
+.branco{
+  background: rgb(206, 206, 206);
 }
-#Shop{
-  display: block;
+.mt7{
+  overflow: hidden;
 }
-#Serviço{
-  display: block;
+.mt{
+  margin-top: 100px;
 }
-#Main{
- display: block;
+.container-local{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.dados-local{
+  background: #fcfcfc;
+  text-align: center;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  border: solid 0.5px rgb(22, 22, 22);
+}
+.local-text1{
+  background: #010000;
+  padding: 5px;
+  color: #e9e9e9;
+  font-size: 10px;
+}
+.local-text2{
+  padding: 30px;
+  font-size: 20px;
+  background: white;
+}
+.local-text3{
+  background: #0049e6;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+.icons-map{
+   height: 30px;
+   width: 30px;
+   margin: 40px;
+   color: rgb(8, 4, 230);
+}
+.local-text4{
+  margin-top: 20px;
+  font-weight: 700;
+}
+.local-text5{
+  color: #474747;
+  font-size: 14px;
+}
+.local-text6{
+  color: #0400f3;
+  font-size: 14px;
+  font-weight: 700;
+}
+.map{
+  width: 900px;
+}
+
+#Local ,#Mt-07 ,#R3-60 ,#Mt-03 ,#R3abs ,#Serviço ,#Shop {
+  display: none ;
 }
